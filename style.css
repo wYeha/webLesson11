@@ -720,3 +720,7 @@ header{
 	height: 2.7px;
 	background: #E8E8E8;
 }
+
+.advantage, .citate-h3, .form-h3{
+	display: none;
+}
