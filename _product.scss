@@ -4,6 +4,10 @@
 	font-family: Lato;
 }
 
+.product-page-main {
+	padding-top: 75px;
+}
+
 .breadcrumbs {
 	display: flex;
 	justify-content: space-between;
@@ -32,10 +36,6 @@
 		color: $textAccent;
 		opacity: 1;
 	}
-}
-
-.header {
-	position: static;
 }
 
 .slider {
