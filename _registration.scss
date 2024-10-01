@@ -1,0 +1,174 @@
+@import 'vars';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.reg {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 64px;
+	margin-bottom: 96px;
+
+	&__left {
+		max-width: 360px;
+	}
+
+	&__form {}
+
+	&__input-box {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__form-title {
+		font-weight: 300;
+		font-size: 16px;
+		color: #222;
+	}
+
+	&__input {
+		padding: 13px 17px 16px 17px;
+		border: 1px solid #A4A4A4;
+
+		&:placeholder-shown {
+			padding-left: 17px;
+			font-weight: 300;
+			font-size: 13px;
+			color: #b1b1b1;
+		}
+
+		&:focus {
+			outline: none;
+			border-color: $textAccent;
+		}
+	}
+
+	&__radio-box {
+		margin-top: 31px;
+		margin-bottom: 33px;
+		display: flex;
+		gap: 30px;
+
+		& label {
+			font-weight: 300;
+			font-size: 11px;
+			color: #000;
+		}
+	}
+
+	&__radio-flex {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__radio {
+		margin: 0;
+		padding: 0;
+		width: 17px;
+		height: 17px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		outline: none;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 17px;
+			height: 17px;
+			box-sizing: border-box;
+			border-radius: 50%;
+			border: 1px solid #a4a4a4;
+		}
+
+		&:checked::before {
+			content: '';
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			top: 2.5px;
+			left: 2.5px;
+			border-radius: 10px;
+			background-color: $textAccent;
+		}
+
+		&:checked::after {
+			border-color: $textAccent;
+		}
+	}
+
+	&__note {
+		font-weight: 300;
+		font-size: 13px;
+		color: #b1b1b1;
+		margin-top: 15px;
+	}
+
+	&__btn {
+		margin-top: 39px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+		width: 167px;
+		border: none;
+		background: $textAccent;
+		padding-top: 16px;
+		padding-bottom: 17px;
+
+		&:hover {
+			gap: 10px;
+		}
+	}
+
+	&__btn-text {
+		font-weight: 400;
+		font-size: 14px;
+		color: #fff;
+	}
+
+	&__right {
+	max-width: 652px;}
+
+	&__right-title,
+	&__right-text,
+	&__right-li {
+		font-weight: 300;
+		font-size: 24px;
+		color: #000;
+	}
+
+	&__right-text{
+		padding-top: 22px;
+		padding-bottom: 21px;
+	}
+
+	&__right-ul {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		padding: 0;
+	}
+
+	&__right-li {
+		padding-left: 44px;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 6px;
+			width: 20px;
+			height: 16px;
+			background: url("img/li-marker.svg");
+		}
+	}
+}
