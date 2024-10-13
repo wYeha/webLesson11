@@ -18,25 +18,14 @@
 	width: 652px;
 	background: #fff;
 	box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
-}
-
-.card {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 42px;
-	box-sizing: border-box;
-	padding: 22px 97px 62px 31px;
 	position: relative;
-
-
 
 	&::after,
 	&::before {
 		position: absolute;
 		content: '';
 		top: 28px;
-		right: 22px;
+		right: 24px;
 		width: 25px;
 		height: 4px;
 		background: #575757;
@@ -51,6 +40,17 @@
 	&::before {
 		transform: rotate(-45deg);
 	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 42px;
+	box-sizing: border-box;
+	padding: 22px 97px 62px 31px;
+	position: relative;
+
 
 
 	&__params {
@@ -246,4 +246,57 @@
 	height: 2px;
 	width: 100%;
 	background: #e2e2e2;
+}
+
+@media (max-width: 1140px) {
+
+	.header__wrapper {
+		padding: 0 32px;
+	}
+
+	.breadcrumbs__title {
+		padding: 0 15px;
+	}
+
+	.cart-box {
+		flex-direction: column;
+		align-items: center;
+		margin: 59px 15px 128px 15px;
+	}
+
+	.cart-left,
+	.cart__card,
+	.cart-right {
+		width: 100%;
+	}
+
+	.cart-left {
+		margin-bottom: 64px;
+	}
+
+	.cart__card {
+		width: 100%;
+	}
+
+	.cart__buttons {
+		justify-content: space-around;
+	}
+
+	.cart-right {
+		display: flex;
+		justify-content: space-between;
+		gap: 15px;
+	}
+
+	.cart__form {
+		width: 100%;
+	}
+
+	.cart__total {
+		margin-top: 36px;
+		height: 214px;
+		box-sizing: border-box;
+	}
+
+
 }

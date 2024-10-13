@@ -11,11 +11,9 @@
 	margin-top: 64px;
 	margin-bottom: 96px;
 
-	&__left {
-		max-width: 360px;
+	&__form {
+		width: 360px;
 	}
-
-	&__form {}
 
 	&__input-box {
 		display: flex;
@@ -91,10 +89,10 @@
 		&:checked::before {
 			content: '';
 			position: absolute;
-			width: 12px;
-			height: 12px;
-			top: 2.5px;
-			left: 2.5px;
+			width: 17px;
+			height: 17px;
+			top: 0;
+			left: 0;
 			border-radius: 10px;
 			background-color: $textAccent;
 		}
@@ -135,7 +133,8 @@
 	}
 
 	&__right {
-	max-width: 652px;}
+		max-width: 652px;
+	}
 
 	&__right-title,
 	&__right-text,
@@ -145,7 +144,7 @@
 		color: #000;
 	}
 
-	&__right-text{
+	&__right-text {
 		padding-top: 22px;
 		padding-bottom: 21px;
 	}
@@ -169,6 +168,17 @@
 			width: 20px;
 			height: 16px;
 			background: url("img/li-marker.svg");
+		}
+	}
+}
+
+@media (max-width: 1140px) {
+	.reg{
+		margin-left: 16px;
+		margin-right: 16px;
+
+		&__form{
+			margin-right: 22px;
 		}
 	}
 }
