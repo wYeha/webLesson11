@@ -213,3 +213,64 @@ summary::-webkit-details-marker {
 		margin-bottom: 63px;
 	}
 }
+
+@media (max-width: 710px) {
+	.breadcrumbs {
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding-top: 24px;
+		gap: 32px;
+		box-sizing: border-box;
+	}
+
+	.filter-sort {
+		justify-content: space-between;
+		gap: 0px;
+		padding-top: 10px;
+		position: relative;
+	}
+
+	.sort {
+		padding-top: 20px;
+		gap: 24px;
+		position: absolute;
+		right: 8px;
+		z-index: 1000;
+
+		&__summary {
+			gap: 9px;
+		}
+
+		&__heading {
+			font-size: 12px;
+		}
+	}
+
+
+	.filter {
+		width: 100vw;
+
+		&__summary {
+			padding-left: 8px;
+		}
+
+		&__summary svg {
+			width: 37px;
+			height: 25px;
+		}
+
+		&__heading {
+			display: none;
+		}
+
+		&__content {
+			padding-left: 8px;
+			padding-right: 8px;
+		}
+	}
+
+	.products-grid__catalog {
+		margin: 0 8px;
+	}
+}

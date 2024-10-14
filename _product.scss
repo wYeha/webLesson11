@@ -179,3 +179,42 @@
 		margin: 128px 16px;
 	}
 }
+
+@media (max-width: 700px) {
+	.slider {
+		height: 624px;
+
+		&__image {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__image img {
+			width: 375px;
+		}
+	}
+
+	.arrow-left,
+	.arrow-right {
+		margin: 0;
+		z-index: 100;
+		top: calc(50% - 23px);
+	}
+
+	.product {
+		&__dividor {
+			width: 175px;
+		}
+
+		&__dropdown {
+			font-size: 10px;
+		}
+
+	}
+
+	.products-grid__product {
+		margin: 64px 8px;
+	}
+}
